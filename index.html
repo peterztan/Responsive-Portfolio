@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>About Me</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Peter Tan's Portfolio">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Peter,Tan">
+        <meta name="author" content="Peter Z. Tan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/pages.css">
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    </head>
+    <body id=maingpage background="./assets/images/CBx2.png">
+        <!--This section below contains the html codes for the navbar-->
+        <nav id="masthead" class="navbar navbar-default">
+            <div class="container-fluid">
+                <!--::before-->    
+                <header>
+                    <h1>Peter Tan</h1>
+                
+                    <ul>
+                        <li><a class="about" href="./index.html">About</a></li>
+                        <li><a class="port" href="./portfolio.html">Portfolio</a></li>
+                        <li><a class="contact" href="./contact.html">Contact</a></li>
+                    </ul>
+                </header>
+                <!--::after-->
+            </div>
+        </nav>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="container">
+            <section id="bio">
+
+                <h2>About Me</h2>
+                <hr />
+                <img id="profile" src="./assets/images/profile.jpg">
+                <p class="clearfix">
+                Hello, my name is Peter Tan.
+                I am currently a Healthcare IT Specialist working at a pain clinic.
+                As a technology enthusiast, I have always enjoyed working with technology,
+                which has inspired me to make the switch into the IT field after working as
+                a Forensic Scientist for two and a half years.
+                </br></br>
+                From hardware troubleshooting at a very young age to
+                tapping into video game programming in my free time,
+                the majority of my life has revolved around computers,
+                and therefore coding came naturally for me.
+                </br></br>
+                I may not look like it, but I was originially from China.
+                Having spent a significant amount of my life there,
+                I have a good understanding of urban structures, raw market audience,
+                and therefore, everything in the universe. #MasterOf42
+                </p>
+
+            </section>
+        </div>
+        
+        <footer>
+            <h3>Copyright © 2019</h3>
+        </footer>       
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("masthead");
+
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</html>

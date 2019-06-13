@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Peter Tan's Portfolio">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Peter,Tan">
+        <meta name="author" content="Peter Z. Tan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/pages.css">
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    </head>
+    <body id=maingpage background="./assets/images/CBx2.png">
+        <!--This section below contains the html codes for the navbar-->
+        <nav id="masthead" class="navbar navbar-default">
+            <div class="container-fluid">
+                <!--::before-->    
+                <header>
+                    <h1>Portfolio</h1>
+                
+                    <ul>
+                        <li><a class="about" href="./index.html">About</a></li>
+                        <li><a class="port" href="./portfolio.html">Portfolio</a></li>
+                        <li><a class="contact" href="./contact.html">Contact</a></li>
+                    </ul>
+                </header>
+                <!--::after-->
+            </div>
+        </nav>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="container">
+            <section id="bio">
+
+                <h2>Portfolio</h2>
+                <hr />
+                <div class="ImgContainer">
+                    <img class="PIMG" src="./assets/images/CPS-portfolio.jpg" alt="Creative Problem Solving">
+                    <div class="TXT">Creative Problem Solving</div>
+                </div>
+                <div class="ImgContainer">
+                    <img class="PIMG" src="./assets/images/FS-portfolio.jpg" alt="Forensic Science">
+                    <div class="TXT">Forensic Science</div>
+                </div>
+                <div class="ImgContainer">
+                    <img class="PIMG" src="./assets/images/HIT-portfolio.jpg" alt="Healthcare IT">
+                    <div class="TXT">Healthcare Information Technology</div>
+                </div>
+                <div class="ImgContainer">
+                    <img class="PIMG" src="./assets/images/MIF-portfolio.png" alt="MIF">
+                    <div class="TXT">Mobile Integration</div>
+                </div>
+                <div class="ImgContainer">
+                    <img class="PIMG" src="./assets/images/PP-portfolio.jpg" alt="PP">
+                    <div class="TXT">Patient Portal</div>
+                </div>
+            </section>
+        </div>
+        
+        <br><br><br><br><br><br><br>
+
+        <footer>
+            <p>Copyright © 2019</p>
+        </footer>
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+    
+        var header = document.getElementById("masthead");
+    
+        var sticky = header.offsetTop;
+    
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            }   else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</html>

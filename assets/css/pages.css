@@ -1,0 +1,48 @@
+
+#profile {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    float: left;
+}
+
+.PIMG {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    float: left;
+}
+
+.ImgContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.TXT {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 60%;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    padding: 20px;
+    width: 76.5%;
+}
+
+.name, .email, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    width:100%;
+}
+
+.submit {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 25%;
+}

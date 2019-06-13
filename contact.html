@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Peter Tan's Portfolio">
+        <meta name="keywords" content="HTML,CSS,JavaScript,Peter,Tan">
+        <meta name="author" content="Peter Z. Tan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/pages.css">
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    </head>
+    <body id=maingpage background="./assets/images/CBx2.png">
+        <!--This section below contains the html codes for the navbar-->
+        <nav id="masthead" class="navbar navbar-default">
+            <div class="container-fluid">
+                <!--::before-->    
+                <header>
+                    <h1>Contact</h1>
+                
+                    <ul>
+                        <li><a class="about" href="./index.html">About</a></li>
+                        <li><a class="port" href="./portfolio.html">Portfolio</a></li>
+                        <li><a class="contact" href="./contact.html">Contact</a></li>
+                    </ul>
+                </header>
+                <!--::after-->
+            </div>
+        </nav>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="container">
+            <section id="bio">
+
+                <h2>Contact</h2>
+                <hr />
+                <form action="/action_page.php">
+                    Name: <br>
+                    <input class="name" type="text" name="fullname"><br><br>
+                    E-mail: <br>
+                    <input class="email" type="email" name="E-mail"><br><br>
+                    Message: <br>
+                    <textarea name="message" rows="20" cols="30"></textarea><br><br>
+                    <input class="submit" type="submit">
+                </form>
+            </section>
+        </div>
+        
+        <footer>
+            <p>Copyright © 2019</p>
+        </footer>
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+    
+        var header = document.getElementById("masthead");
+    
+        var sticky = header.offsetTop;
+    
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            }   else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</html>
