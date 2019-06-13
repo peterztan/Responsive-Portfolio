@@ -29,8 +29,8 @@ nav .container-fluid {
 
 .container-fluid {
     top: 0;
-    padding-right: auto;
-    padding-left: auto;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .container-fluid::after, .container-fluid::before {
@@ -112,8 +112,8 @@ body {
 }
 
 .smallCon {
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 h2 {
