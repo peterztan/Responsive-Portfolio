@@ -3,6 +3,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 999;
+    top: 0;
 }
 
 .navbar-default {
@@ -14,11 +15,11 @@ nav {
     position: fixed;
     min-height: 70px;
     border-bottom: 3px solid #cccccc;
-    margin-bottom: 20px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 nav .container-fluid {
+    top: 0;
     position: relative;
     display: block;
     max-width: 960px;
@@ -27,8 +28,9 @@ nav .container-fluid {
 }
 
 .container-fluid {
-    padding-right: 80px;
-    padding-left: 80px;
+    top: 0;
+    padding-right: auto;
+    padding-left: auto;
 }
 
 .container-fluid::after, .container-fluid::before {
@@ -93,15 +95,20 @@ li a.about, a.port {
     border-right: 1px solid #cccccc;
 }
 
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
 .container {
     background-color: #ffffff;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     max-width: 920px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 20px 20px;
     border: 3px solid #dddddd;
 }
@@ -120,29 +127,47 @@ p.clearfix::after {
     word-wrap: break-word;
 }
 
-#profile {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-    float: left;
-}
-
-.PIMG {
-    width: 300px;
-    height: 200px;
-    margin: 20px;
-    float: left;
-}
-
 footer {
     padding: 14px 16px;
     background-color: #666666;
     bottom: 0;
-    position: fixed;
+    position: relative;
     text-align: center;
     color: #777777;
     width: 100%;
     border-top: 8px solid #4aaaa5;
     margin-top: -50;
     z-index: 999;
+}
+
+@media screen and (max-width: 640px) {
+    
+    .navbar{
+        margin-bottom: 50;
+    }
+
+    .container {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    header h1 {
+        content: "";
+        clear: both;
+        display: table;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        content: "";
+        clear: both;
+        display: table;
+        float: left;
+    }
 }
