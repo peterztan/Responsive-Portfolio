@@ -14,7 +14,7 @@
     </head>
     <body id=maingpage background="./assets/images/CBx2.png">
         <!--This section below contains the html codes for the navbar-->
-        <nav id="masthead" class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!--::before-->    
                 <header>
@@ -32,24 +32,26 @@
 
         <br><br><br><br><br><br><br>
 
-        <div class="container">
-            <section id="bio">
+        <div class="container-fluid smallCon">
+            <div class="container">
+                <section id="bio">
 
-                <h2>Contact</h2>
-                <hr />
-                <form action="/action_page.php">
-                    Name: <br>
-                    <input class="name" type="text" name="fullname"><br><br>
-                    E-mail: <br>
-                    <input class="email" type="email" name="E-mail"><br><br>
-                    Message: <br>
-                    <textarea name="message" rows="20" cols="30"></textarea><br><br>
-                    <input class="submit" type="submit">
-                </form>
-            </section>
+                    <h2>Contact</h2>
+                    <hr />
+                    <form action="/action_page.php">
+                        Name: <br>
+                        <input class="name" type="text" name="fullname"><br><br>
+                        E-mail: <br>
+                        <input class="email" type="email" name="E-mail"><br><br>
+                        Message: <br>
+                        <textarea name="message" rows="20" cols="30"></textarea><br><br>
+                        <input class="submit" type="submit">
+                    </form>
+                </section>
+            </div>
         </div>
         
-        <footer>
+        <footer id="masthead">
             <p>Copyright © 2019</p>
         </footer>
     </body>

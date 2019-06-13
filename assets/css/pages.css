@@ -46,3 +46,34 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 25%;
 }
+
+@media screen and (max-width: 768px) {
+
+    .TXT {
+        width: 76.8%;
+    }
+
+    .ImgContainer {
+        width: 40%;
+    }
+
+    .PIMG {
+        width: 76%;
+        height: 76%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ImgContainer {
+        width: 300px;
+    }
+
+    .PIMG {
+        width: 300px;
+        height: 300px; 
+    }
+
+    .TXT {
+        width: 300px;
+    }
+}
