@@ -29,8 +29,8 @@ nav .container-fluid {
 
 .container-fluid {
     top: 0;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 25%;
+    padding-left: 25%;
 }
 
 .container-fluid::after, .container-fluid::before {
@@ -112,8 +112,8 @@ body {
 }
 
 .smallCon {
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 25%;
+    padding-left: 25%;
 }
 
 h2 {
@@ -141,6 +141,18 @@ footer {
     border-top: 8px solid #4aaaa5;
     margin-top: -50;
     z-index: 999;
+}
+
+@media screen and (max-width: 980px) {
+    .smallCon {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .container-fluid {
+        top: 0;
+        padding-right: 15%;
+        padding-left: 15%;    
 }
 
 @media screen and (max-width: 768px) {
